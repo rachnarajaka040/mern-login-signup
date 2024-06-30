@@ -10,14 +10,8 @@ const app = express();
 
 const PORT = 4000;
 
-app.get('/',(req,res)=>{
-    res.send('welcome')
-})
 
-// POST endpoint to handle email and password
-app.post('/rachna/api',(req,res)=>{
-    res.send("rachna rajak")
-})
+
 
 app.use(express.json());
 app.use('/api/auth',require('./routes/auth'))
